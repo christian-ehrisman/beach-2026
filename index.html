@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>🏖️ beach 2026 EMERALD ISLE 🏖️</title>
+    <style>
+        body {
+            background-color: #00FFFF;
+            background-image: url('assets/beach0.png');
+            background-repeat: repeat;
+            background-size: 200px auto;
+            font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+            margin: 0;
+            padding: 20px;
+            color: #FF00FF;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFFF00;
+            border: 5px dashed #FF0000;
+            padding: 20px;
+            box-shadow: 10px 10px 0px #000000;
+        }
+
+        h1 {
+            color: #FF0000;
+            text-align: center;
+            font-size: 48px;
+            text-shadow: 3px 3px #0000FF, 6px 6px #00FF00;
+            animation: rainbow 3s infinite;
+        }
+
+        @keyframes rainbow {
+            0% {
+                color: #FF0000;
+            }
+
+            20% {
+                color: #FF8800;
+            }
+
+            40% {
+                color: #FFFF00;
+            }
+
+            60% {
+                color: #00FF00;
+            }
+
+            80% {
+                color: #0000FF;
+            }
+
+            100% {
+                color: #FF00FF;
+            }
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            50%,
+            100% {
+                opacity: 1;
+            }
+
+            25%,
+            75% {
+                opacity: 0;
+            }
+        }
+
+        marquee {
+            background-color: #FF00FF;
+            color: #FFFF00;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            border: 3px solid #00FF00;
+        }
+
+        .content {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border: 3px solid #0000FF;
+            margin: 20px 0;
+        }
+
+        .content p {
+            color: #000080;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .visitor-counter {
+            text-align: center;
+            background-color: #000000;
+            color: #00FF00;
+            padding: 15px;
+            margin: 20px 0;
+            border: 5px outset #808080;
+            font-family: "Courier New", monospace;
+            font-size: 20px;
+        }
+
+        .counter-display {
+            display: inline-block;
+            background-color: #000000;
+            border: 2px inset #404040;
+            padding: 5px 15px;
+            letter-spacing: 3px;
+        }
+
+        .flame {
+            color: #FF4500;
+            text-shadow: 0 0 10px #FF0000;
+            font-weight: bold;
+        }
+
+        ul {
+            font-size: 20px;
+            color: #FF0000;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        hr {
+            border: 3px dashed #FF00FF;
+        }
+
+        .under-construction {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .under-construction img {
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        a {
+            color: #0000FF;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: #800080;
+        }
+
+        .guestbook {
+            background-color: #FFB6C1;
+            padding: 15px;
+            border: 3px double #FF1493;
+            margin: 20px 0;
+        }
+
+        .music-player {
+            text-align: center;
+            background: linear-gradient(to bottom, #C0C0C0, #808080);
+            padding: 10px;
+            border: 2px outset #FFFFFF;
+            margin: 20px 0;
+        }
+
+        #playButton {
+            display: none;
+            background: linear-gradient(to bottom, #FF0000, #CC0000);
+            color: #FFFF00;
+            border: 5px outset #FFD700;
+            padding: 20px 40px;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 15px;
+            animation: pulse 1s infinite;
+            box-shadow: 5px 5px 0px #000000;
+        }
+
+        #playButton:hover {
+            background: linear-gradient(to bottom, #FF3333, #FF0000);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        center {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <marquee behavior="scroll" direction="left">
+            🌊 WELCOME TO OUR BEACH VACATION PAGE!!! 🏖️ BEST VIEWED IN NETSCAPE NAVIGATOR 3.0!!! 🌴
+        </marquee>
+
+        <h1>
+            ★ ･ﾟ･★･ﾟ･★ beach 2026 EMERALD ISLE ★･ﾟ･★･ﾟ･ ★
+        </h1>
+
+        <center>
+            <p class="blink" style="font-size: 28px; color: #FF0000;">
+                ✨ ✨ ✨ UNDER CONSTRUCTION ✨ ✨ ✨
+            </p>
+        </center>
+
+        <div class="visitor-counter">
+            <img src="data:image/svg+xml,%3Csvg width='30' height='30' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='15' y='20' text-anchor='middle' fill='%2300FF00' font-size='20'%3E👁️%3C/text%3E%3C/svg%3E"
+                alt="eye">
+            YOU ARE VISITOR NUMBER:
+            <span class="counter-display" id="visitorCount">0 0 0 0</span>
+            <img src="data:image/svg+xml,%3Csvg width='30' height='30' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='15' y='20' text-anchor='middle' fill='%2300FF00' font-size='20'%3E👁️%3C/text%3E%3C/svg%3E"
+                alt="eye">
+        </div>
+
+        <div class="music-player">
+            <p style="color: #000000; margin: 5px 0; font-family: Arial;">♪♫ NOW PLAYING: MOOD MUSIC ♫♪</p>
+            <button id="playButton" onclick="playMusic()">🔊 CLICK HERE FOR MOOD MUSIC! 🔊</button>
+            <audio id="bgMusic" controls loop autoplay style="width: 100%; max-width: 400px;">
+                <source src="assets/back_music.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <center>
+                <h2 style="color: #FF6347; text-decoration: underline;">
+                    🌴🌺 ABOUT MY VACATION 🌺🌴
+                </h2>
+            </center>
+
+            <p>
+                <b>Welcome to my personal home page!!!</b> I'm going to the <span class="flame">BEACH</span>
+                and it's going to be <i>totally awesome!!!</i> Check out all the cool stuff I'm gonna do:
+            </p>
+
+            <ul>
+                <li>🏊 Swimming in the OCEAN!!!</li>
+                <li>🏖️ Building SAND CASTLES!!!</li>
+                <li>🍦 Eating ICE CREAM!!!</li>
+                <li>☀️ Getting a TAN!!!</li>
+                <li>🐚 Collecting SEASHELLS!!!</li>
+                <li>🌅 Watching the SUNSET!!!</li>
+            </ul>
+
+            <p>
+                This page was made with <b>♥ LOVE ♥</b> and <b>Microsoft FrontPage 97</b>!!!
+                Please bookmark this page and come back often for updates!!!
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="guestbook">
+            <center>
+                <h3 style="color: #FF1493;">📝 SIGN MY GUESTBOOK!!! 📝</h3>
+                <p style="color: #000000;">
+                    <i>Coming soon... maybe... if I figure out CGI scripts...</i>
+                </p>
+            </center>
+        </div>
+
+        <hr>
+
+        <marquee behavior="scroll" direction="right" scrollamount="3">
+            🌊🐚🏖️🌴☀️🍹🦀🐠🌅 SURF'S UP DUDE!!! 🌅🐠🦀🍹☀️🌴🏖️🐚🌊
+        </marquee>
+
+        <center>
+            <p style="font-size: 12px; color: #000000; margin-top: 20px;">
+                <b>LAST UPDATED:</b> January 19, 2026<br>
+                <b>BEST VIEWED:</b> 800x600 resolution, 16-bit color<br>
+                <b>WEBMASTER:</b> Christian<br>
+                <br>
+                <img src="data:image/svg+xml,%3Csvg width='88' height='31' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='88' height='31' fill='%230000FF'/%3E%3Ctext x='44' y='20' text-anchor='middle' fill='%23FFFF00' font-size='12' font-weight='bold'%3ENetscape%3C/text%3E%3C/svg%3E"
+                    alt="Netscape Now">
+                <img src="data:image/svg+xml,%3Csvg width='88' height='31' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='88' height='31' fill='%23FF0000'/%3E%3Ctext x='44' y='20' text-anchor='middle' fill='%23FFFFFF' font-size='10' font-weight='bold'%3EHTML 3.2%3C/text%3E%3C/svg%3E"
+                    alt="HTML 3.2">
+            </p>
+
+            <p class="blink" style="font-size: 24px; color: #FF0000; margin: 20px 0;">
+                ⚠️ THIS SITE IS BEST EXPERIENCED WITH SOUND ON!!! ⚠️
+            </p>
+        </center>
+    </div>
+
+    <script>
+        const audio = document.getElementById('bgMusic');
+        const playButton = document.getElementById('playButton');
+
+        // Try to autoplay
+        const playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                // Autoplay started successfully
+                console.log('Autoplay started!');
+            }).catch(error => {
+                // Autoplay was prevented, show the big button
+                console.log('Autoplay blocked, showing button');
+                playButton.style.display = 'inline-block';
+            });
+        }
+
+        function playMusic() {
+            audio.play();
+            playButton.style.display = 'none';
+        }
+
+        // Visitor counter using CountAPI with localStorage fallback
+        async function updateVisitorCount() {
+            try {
+                // Try CountAPI first
+                const response = await fetch('https://api.countapi.xyz/hit/beach2026-christian/emerald-isle', {
+                    method: 'GET',
+                    mode: 'cors'
+                });
+
+                if (!response.ok) {
+                    throw new Error('API response not OK');
+                }
+
+                const data = await response.json();
+                console.log('CountAPI response:', data);
+
+                // Format the number with spaces between digits for that retro look
+                const formatted = data.value.toString().padStart(4, '0').split('').join(' ');
+                document.getElementById('visitorCount').textContent = formatted;
+
+            } catch (error) {
+                console.error('CountAPI failed:', error);
+
+                // Fallback to localStorage counter
+                let localCount = parseInt(localStorage.getItem('visitorCount') || '0');
+                localCount++;
+                localStorage.setItem('visitorCount', localCount);
+
+                const formatted = localCount.toString().padStart(4, '0').split('').join(' ');
+                document.getElementById('visitorCount').textContent = formatted;
+            }
+        }
+
+        // Update counter when page loads
+        updateVisitorCount();
+    </script>
+</body>
+
+</html>
