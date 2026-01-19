@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  beach-website:
+    image: nginx:alpine
+    container_name: beach-2026
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    networks:
+      - default
+
+networks:
+  default:
+    name: beach-network
