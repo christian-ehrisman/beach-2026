@@ -259,7 +259,7 @@
 
         <div class="music-player">
             <p style="color: #000000; margin: 5px 0; font-family: Arial;">♪♫ NOW PLAYING: MOOD MUSIC ♫♪</p>
-            <button id="playButton" onclick="playMusic()" type="button">🔊 CLICK HERE FOR MOOD MUSIC! 🔊</button>
+            <button id="playButton" type="button">🔊 CLICK HERE FOR MOOD MUSIC! 🔊</button>
             <audio id="bgMusic" controls loop preload="auto" style="width: 100%; max-width: 400px;">
                 <source src="assets/back_music.ogg" type="audio/ogg">
                 Your browser does not support the audio element.
@@ -408,10 +408,22 @@
             });
         }
 
-        function playMusic() {
-            audio.play();
-            playButton.style.display = 'none';
-        }
+        // iOS-compatible music button handler
+        playButton.addEventListener('click', function() {
+            // Load and play audio within the click handler for iOS compatibility
+            audio.load();
+            const playPromise = audio.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    console.log('Music playing!');
+                    playButton.style.display = 'none';
+                }).catch(error => {
+                    console.error('Play failed:', error);
+                    alert('Could not play audio. Please try using the controls below!');
+                });
+            }
+        });
 
         // Visitor counter using CountAPI with localStorage fallback
         async function updateVisitorCount() {
